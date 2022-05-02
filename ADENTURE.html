@@ -5,16 +5,31 @@
 <title>THE ADVENTURE GAME</title>
 <style>
 h1{
-    background-color:rgb(35, 35, 57);
-    color:rgb(16, 245, 112);
-    text-align: center;
-   padding: 50px;
+    display:block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-inline-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+   font-weight: bold;
 }
-
+*{
+    box-sizing: border-box;
+}
+.topbox{
+    background-color: gray;
+    color: rgb(238, 222, 222);
+    padding: 15px;
+}
+div{
+    display:block;
+}
 
 p.one{
 background-color: rgb(215, 231, 44);
 text-align: center;
+margin: 30px 30px;
+padding: 10px 80px;
 }
 #second{
     text-align:center;
@@ -30,18 +45,7 @@ text-align: center;
 float: left;
  width: 30%;
  padding: 0 10px;
-}
-.pic figcaption{
-position:absolute;
-bottom:0;
-left:0;
-text-align: center;
-background:rgb(75, 69, 69);
-padding: 10px;
-
-color:white;
-box-sizing: border-box;
-
+ box-shadow: inset;
 }
 
 
@@ -49,30 +53,32 @@ box-sizing: border-box;
 
 </head>
 <body >
-    
         
-<h1 >
+        
+<div class="topbox">
     <img src="https://www.readersdigest.ca/wp-content/uploads/2016/05/travel-adventure.jpg" height="200px" width="300px" alt="Adventure pic">
-   Choose to start the adventure coding game!
-  
-</h1>
+    <h1 >Choose to start the adventure coding game!</h1>
+</div>
+
 <p class="one">In this game your mission is to <b>find your own adventure and explore!</b> This will also test your <b>programming knowledge</b> to the limits!<br>
     Along the way you will be set programming challenges. You must overcome them.</p>
+
 <p  id="second"><b>How do you want to proceed?</b></p>
 
 <!-- swimming -->
 
-<figure class="pic">
+<div class="pic">
 <a href="Codepage.html" target="_blank">
     <img src="https://th.bing.com/th/id/OIP.xqCm--k-06CC7ecvpQHrNAHaE8?pid=ImgDet&rs=1"> 
- <figcaption>Swimming</figcaption>
+ Swimming
 
 </a>
-</figure>
+</div>
 
 
 
 <!-- hiking-->
+
 <figure class="pic">
     <a href="Codepage.html" target="_blank">
          <img   src="https://preview.redd.it/fkfbbp89qgl41.jpg?auto=webp&s=fe6cb007440f9ae6527882cffab1950176bfd6b4" >
@@ -80,9 +86,9 @@ box-sizing: border-box;
             <figcaption>Camping and hiking</figcaption>  
                 </a>
             </figure>      
-           
 
 <!--fishing-->
+
 <figure class="pic">
     <a href="Codepage.html" target="_blank">
        
@@ -91,8 +97,7 @@ box-sizing: border-box;
         <figcaption>--fishing--</figcaption>  
                 </a>
             </figure> 
-    
-            
+        
 
 
 
