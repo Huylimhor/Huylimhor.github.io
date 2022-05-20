@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
 h4{
     background-color: rgb(220, 59, 59);
@@ -8,7 +9,11 @@ h4{
     font-family: 'Courier New', Courier, monospace;
     background-size:200px;
 }
-
+button{
+    font-size: 25px;
+    border: 1px solid rgb(214, 19, 19);
+    background-color: aqua;
+}
    
 pre{
     background-color:green;
@@ -19,6 +24,9 @@ pre.if{
     background-color:lightblue;
     font-size: large;
 }
+button{
+    border-radius: 25px;
+}
 
 </style>
     <title>The code page</title>
@@ -26,55 +34,63 @@ pre.if{
 <body>
     <h4 >Look at the following code and then answer the question below:</h4>
 <pre >  import java.util.Scanner;
-    public class MyClass {
+    public class Football {
         public static void main(String args[]) {
-                
-            Scanner sc = new Scanner(System.in);
-            System.out.print("Enter any character to start and x to stop: " );
-            String userInput = sc.nextLine().toLowerCase();
 
-            while(!userInput.equals("x")){
-                System.out.print("Enter a word: " );
-                String name = sc.nextLine();
+            System.out.println("This quiz will test your football/soccer knowledge!");
 
-                if(name.length() < 5){
-                    System.out.println("That word is so short! " );
-                }else{
-                    System.out.println("That is too wordy! " );
-                }
-
-                System.out.print("Enter any character to start and x to stop: " );
-                userInput = sc.nextLine().toLowerCase();
-            }
-
-            System.out.print("Done!" );
+            System.out.println("Which football/soccer team won the most champions league title?" );
+            System.out.println("1.Liverpool")
+            System.out.println("2.Manchester united")
+            System.out.println("3.Real madrid")
+            System.out.println("4.Barcelona")
+    
+      do
+      {
+        try
+        {
+          Scanner sc = new Scanner(System.in);
+          System.out.println("Enter your answer as an integer: ");
+          int choice=sc.nextInt();
+          flag=false;
         }
+        catch(Exception e)
+        {
+          // accept integer only.
+          System.out.println("Enter only integer value.");
+          flag=true;
+        }
+      }
+      while(flag);
+          
+          System.out.println("The Choice Value Entered is ");
+          if(choice==1){System.out.print("False");}
+          if(choice==2){System.out.print("False");}
+          if(choice==3){System.out.print("True");}
+          if(choice==4){System.out.print("False");}
+    }
     }</pre>
 <pre class="if">If the user enters the following:
-    s
+  
+    Real madrid
     
-    
-    hello
-    
-    
-    
-    What value is the value of name ?</pre>
+    What will be the output?</pre>
 <!--Botton-->
 <button>
-    <a href="TheAnswerSheet.html">
-    Answer 1= 3
+    <a href="FalseAnswer.html" style="text-decoration: none;">
+   Answer 1= True
     </a>
 </button>
 
 <button>
-    <a href="TheAnswerSheet.html">
-    Answer 2= re
+    <a href="FalseAnswer.html" style="text-decoration: none;">
+    Answer 2= False
 </a>
 </button>
 
 <button>
-    <a href="TheAnswerSheet.html">
-Answer 3= hi
+    <a href="TheAnswerSheet.html" style="text-decoration: none;">
+Answer 3= Enter only integer value.
     </a>
 </button>
 
